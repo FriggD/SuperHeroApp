@@ -11,7 +11,7 @@ Uma aplicação full-stack para gerenciamento de super-heróis e seus superpoder
 - [Como Iniciar a Aplicação](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#como-iniciar-a-aplica%C3%A7%C3%A3o)
 - [Funcionalidades Principais](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#funcionalidades-principais)
 - [Por que esse modelo de aplicação?](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#por-que-esse-modelo-de-aplica%C3%A7%C3%A3o)
-- [Sugestões de melhorias](https://github.com/FriggD/SuperHeroApp?)
+- [Sugestões de melhorias](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#sugest%C3%B5es-de-melhorias)
 
 ## Sobre a Aplicação
 
