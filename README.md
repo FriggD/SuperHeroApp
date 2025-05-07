@@ -11,6 +11,7 @@ Uma aplicação full-stack para gerenciamento de super-heróis e seus superpoder
 - [Como Iniciar a Aplicação](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#como-iniciar-a-aplica%C3%A7%C3%A3o)
 - [Funcionalidades Principais](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#funcionalidades-principais)
 - [Por que esse modelo de aplicação?](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#por-que-esse-modelo-de-aplica%C3%A7%C3%A3o)
+- [Sugestões de melhorias](https://github.com/FriggD/SuperHeroApp?)
 
 ## Sobre a Aplicação
 
@@ -172,3 +173,6 @@ ng serve
 - Além disso, o projeto segue o padrão de arquitetura limpa, com separação clara entre as camadas Core (DTOs, interfaces), Infrastructure (acesso a dados) e API (controladores), o que torna o código mais testável e fácil de manter. A utilização de linguagens fortemente tipadas em toda a stack (TypeScript e C#) proporciona consistência e reduz erros em tempo de execução. 
 - Por fim, o uso do Docker assegura compatibilidade entre sistemas operacionais (Windows, macOS e Linux), e os recursos de hot-reload aceleram o ciclo de desenvolvimento. 
 - Essa combinação de tecnologias foi escolhida para garantir performance, organização, segurança e uma excelente experiência de desenvolvimento.
+
+## Sugestões de melhorias
+- Integração com [The Marvel Comics API](https://developer.marvel.com), permitindo que seja acessado as informações de uma vasta biblioteca de comics da Marvel
