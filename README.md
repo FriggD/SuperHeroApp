@@ -2,6 +2,16 @@
 
 Uma aplicação full-stack para gerenciamento de super-heróis e seus superpoderes.
 
+## Sumário
+- [Sobre a Aplicação](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#sobre-a-aplica%C3%A7%C3%A3o)
+- [Tecnologias Utilizadas](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#tecnologias-utilizadas)
+- [Estrutura do Projeto](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#estrutura-do-projeto)
+- [Modelo de Dados](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#modelo-de-dados)
+- [Swagger](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#modelo-de-dados)
+- [Como Iniciar a Aplicação](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#como-iniciar-a-aplica%C3%A7%C3%A3o)
+- [Funcionalidades Principais](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#funcionalidades-principais)
+- [Por que esse modelo de aplicação?](https://github.com/FriggD/SuperHeroApp?tab=readme-ov-file#por-que-esse-modelo-de-aplica%C3%A7%C3%A3o)
+
 ## Sobre a Aplicação
 
 O SuperheroApp é uma aplicação completa que permite aos usuários gerenciar um catálogo de super-heróis e seus respectivos superpoderes. A aplicação oferece funcionalidades CRUD (Criar, Ler, Atualizar e Deletar) para heróis e superpoderes, com uma interface de usuário intuitiva e uma API RESTful robusta.
@@ -56,8 +66,10 @@ O SuperheroApp é uma aplicação completa que permite aos usuários gerenciar u
 ### Relação Herói-Superpoder (HeroSuperpowers)
 - Tabela de junção para o relacionamento muitos-para-muitos entre Heróis e Superpoderes
 
-## API RESTful
+## SWAGGER
 
+- Acessar o SWAGGER: http://localhost:5000
+  
 ### Endpoints de Heróis
 
 #### GET /api/heroes
