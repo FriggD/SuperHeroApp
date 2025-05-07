@@ -24,6 +24,7 @@ O SuperheroApp é uma aplicação completa que permite aos usuários gerenciar u
 
 ### Banco de Dados
 - **PostgreSQL 16**: Sistema de gerenciamento de banco de dados relacional
+- **DDL.sql**: Estrutura do banco de dados
 
 ### DevOps e Containerização
 - **Docker**: Plataforma de containerização

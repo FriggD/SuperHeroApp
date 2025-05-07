@@ -53,7 +53,7 @@ export class SuperpowerService {
   deleteSuperpower(id: number): Observable<void> {
     return this.http.delete<void>(`${this.apiUrl}/${id}`).pipe(
       tap(() => this.notificationService.success('Superpoder excluído com sucesso')),
-      catchError(error => this.handleError(`Falha ao excluir superpoder com ID ${id}`, error))
+      catchError(error => this.handleError(`Falha ao excluir superpoder com ID ${id}, superpoder vínculado a um superherói`, error))
     );
   }
 
