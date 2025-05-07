@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:16
+    container_name: superhero-postgres
+    environment:
+      POSTGRES_DB: superherodb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data_2:/var/lib/postgresql/data
+    networks:
+      - superhero-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # .NET API Backend
+  api:
+    build:
+      context: .
+      dockerfile: server/SuperheroApp.API/Dockerfile.dev
+    container_name: superhero-api
+    ports:
+      - "80:80"
+      - "5000:5000"
+      - "8080:8080"
+      - "5001:443"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Database=superherodb;Username=postgres;Password=postgres
+      - ASPNETCORE_URLS=http://+:80;http://+:5000
+    volumes:
+      - ./server:/app
+    networks:
+      - superhero-network
+
+  # Angular Frontend
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile.dev
+    container_name: superhero-client
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    networks:
+      - superhero-network
+
+networks:
+  superhero-network:
+    driver: bridge
+
+volumes:
+  postgres-data_2:

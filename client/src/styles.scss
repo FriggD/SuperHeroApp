@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+/* Bootstrap overrides can go here */
+
+/* Custom styles for ng-select */
+.ng-select.custom-select .ng-select-container {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+}
+
+.ng-select.custom-select.ng-invalid.ng-touched .ng-select-container {
+  border-color: #dc3545;
+}
+
+.ng-select.custom-select .ng-dropdown-panel {
+  border-radius: 0.25rem;
+}
+
+.ng-select.custom-select .ng-option-disabled {
+  color: #6c757d;
+}
+
+.ng-select.custom-select .ng-option-selected {
+  background-color: #e9ecef;
+}
+
+.ng-select.custom-select .ng-option-marked {
+  background-color: #f8f9fa;
+}

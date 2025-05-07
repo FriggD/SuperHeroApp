@@ -1,0 +1,53 @@
+# ========== GENERAL ==========
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.bak
+*.swp
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+*.nuget.props
+*.nuget.targets
+
+# ========== C# / .NET ==========
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.exe
+*.dll
+*.pdb
+*.app
+*.cache
+*.dbmdl
+*.dbml
+*.suo
+*.vspscc
+*.vssscc
+*.vsp
+*.pidb
+*.sln.docstates
+*.ncrunch*
+_ReSharper*/
+*.DotSettings.user
+
+project.lock.json
+project.assets.json
+global.json
+.env
+.env.*.local
+*.csproj.user
+*.dotCover
+
+# Publish output
+publish/
+wwwroot/

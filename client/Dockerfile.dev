@@ -1,0 +1,21 @@
+FROM node:18 as build
+
+WORKDIR /app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application
+COPY . .
+
+# Use environment.docker.ts for Docker environment
+RUN cp src/environments/environment.docker.ts src/environments/environment.ts
+
+# Expose port 4200
+EXPOSE 4200
+
+# Start the application with host 0.0.0.0 to make it accessible outside the container
+CMD ["npm", "start", "--", "--host", "0.0.0.0"]

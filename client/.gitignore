@@ -1,0 +1,27 @@
+# ========== ANGULAR ==========
+# Node modules
+**/node_modules/
+**/dist/
+**/out-tsc/
+**/.angular/
+**/.angular-cache/
+
+# Angular environment
+**/src/environments/environment*.ts
+
+# NPM/Yarn logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Angular build artifacts
+**/.ng_build/
+**/.ng_package/
+**/.cache/
+**/.turbo/
+*.tsbuildinfo
+
+# IDE / Editor folders
+.idea/
+.vscode/
+*.code-workspace
