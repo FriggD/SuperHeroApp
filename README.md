@@ -148,3 +148,14 @@ ng serve
 - Associação de múltiplos superpoderes a um herói
 - Interface de usuário responsiva e amigável
 - API RESTful documentada com Swagger
+
+## Por que esse modelo de aplicação?
+
+- Começando pelo Angular, possui suporte à programação fortemente tipada com TypeScript, o que melhora a segurança e a produtividade no desenvolvimento. 
+- No backend, o ASP.NET Core 8 possui alta performance, suporte nativo a APIs RESTful e integração com Swagger para documentação automática. 
+- O banco de dados PostgreSQL foi escolhido por ser robusto, open-source e por oferecer suporte avançado a tipos de dados e relacionamentos complexos. 
+- O acesso aos dados é feito por meio do Entity Framework Core, que simplifica operações com LINQ e facilita a manutenção por meio de migrações automáticas. 
+- Toda a aplicação foi containerizada com Docker, garantindo ambientes consistentes, facilidade no deploy e escalabilidade horizontal. 
+- Além disso, o projeto segue o padrão de arquitetura limpa, com separação clara entre as camadas Core (DTOs, interfaces), Infrastructure (acesso a dados) e API (controladores), o que torna o código mais testável e fácil de manter. A utilização de linguagens fortemente tipadas em toda a stack (TypeScript e C#) proporciona consistência e reduz erros em tempo de execução. 
+- Por fim, o uso do Docker assegura compatibilidade entre sistemas operacionais (Windows, macOS e Linux), e os recursos de hot-reload aceleram o ciclo de desenvolvimento. 
+- Essa combinação de tecnologias foi escolhida para garantir performance, organização, segurança e uma excelente experiência de desenvolvimento.
